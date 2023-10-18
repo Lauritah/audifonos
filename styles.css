@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+}
+
+.image {
+    width: 60%;
+    height: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 6 0px;
+    gap: 30px;
+}
+
+.raya {
+    width: 100%;
+    border-color: grey;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.candado {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 300;
+    color: #cdcdcd;
+}
+
+p {
+    margin: 0;
+    color: #999;
+}
+
+h2 {
+    margin: 0;
+    font-weight: 500;
+    color: #999;
+    font-size: 20px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #999;
+}
+
+.buy {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+    background: grey;
+    color: white;
+}
+
+.pink {
+
+    background: pink;
+}
+
+.grey {
+    background: grey;
+}
+
+.blue {
+    background: blue;
+}
+
+.red {
+    background: red;
+}
+
+.green {
+    background: green;
+}
+
+.colors button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 100%;
+}
+
+.column {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selected {
+    border: 1px solid black !important;
+    padding: 2px;
+}

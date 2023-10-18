@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Audifonos</title>
+</head>
+
+<body>
+    <div class="image">
+        <img src="headphones.jfif" alt="headphones">
+    </div>
+    <div class="content">
+        <h1>Sony auriculares</h1>
+        <p>Premium wireless over-ear headphones with authentic, clear sound perfomance</p>
+        <hr class="raya">
+        <div class="row">
+            <img class="candado" src="padlockwhite.png" alt="candado">
+            <h2> <u>SECURE SHOPPING</u></h2>
+
+        </div>
+        <hr class="raya">
+        <div class="column">
+            <h2>Choose yoour color</h2>
+            <div class="colors row">
+                <button onclick="toggleColor('pink')" class="pink"></button>
+                <button onclick="toggleColor('grey')" class="grey selected"></button>
+                <button onclick="toggleColor('blue')" class="blue"></button>
+                <button onclick="toggleColor('red')" class="red"></button>
+                <button onclick="toggleColor('green')" class="green"></button>
+            </div>
+        </div>
+        <hr class="raya">
+        <div class="row">
+            <h3>USD 499</h3>
+            <button class="buy" type="button">BUY NOW</button>
+        </div>
+    </div>
+</body>
+<script>
+    let currentColor = document.getElementsByClassName("selected")[0];
+    function toggleColor(newColor) {
+        currentColor.classList.remove("selected")
+        currentColor = document.getElementsByClassName(newColor)[0];
+        currentColor.classList.add("selected")
+    }
+</script>
+
+</html>
